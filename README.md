@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/dirkschumacher/votingpower.r.png?branch=master)](https://travis-ci.org/dirkschumacher/votingpower.r)
 [![Coverage Status](https://coveralls.io/repos/dirkschumacher/votingpower.r/badge.svg?branch=master)](https://coveralls.io/r/dirkschumacher/votingpower.r?branch=master)
 
-Have you ever asked yourself if weigthed voting is fair? This package implements (or will implement) some of the most popular voting power measurement methods. 
+Have you ever asked yourself if weighted voting is fair? This package implements (or will implement) some of the most popular voting power measurement methods. 
 
 Imagine you are a representative of the country Luxembourg in the European Economic Community of 1958. Germany, France and Italy hat 4 votes each, Belgium and the Netherlands 2 and Luxembourg 1 vote. The necessary quota was 12 out of the 17 votes. The problem is, there exist no situation where the vote of Luxembourg counts; i.e. would change the outcome for a yes to no - this is called being critical. 
 
@@ -41,11 +41,11 @@ print(round(eec$weights / sum(eec$weights), 2))
 More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998).
 
 ## API
-* `create_weighted_voting_game` Create a weigthed voting game.
+* `create_weighted_voting_game` Create a weighted voting game.
 * `create_simple_voting_game` Creates a simple voting game. A simple voting game is a weighted voting game with weights = 1 for all voters.
 * `compute_bz_score` For a voting game this function computes the Bz score; i.e. the number of times a voter is critical. 
 * `compute_bz_index` Bz index is the Bz score normalised by the sum of the Bz scores.
-* `compute_bz_power` The Bz power is the Bz score devided by 2^(n-1) where n is the number of voters. It corresponds to the probability a voter is critical.
+* `compute_bz_power` The Bz power is the Bz score divided by 2^(n-1) where n is the number of voters. It corresponds to the probability a voter is critical.
 
 ## Versioning
 This package uses [Semantic Versioning 2.0](http://semver.org/). 
