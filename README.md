@@ -3,3 +3,4 @@
 [![Coverage Status](https://coveralls.io/repos/dirkschumacher/votingpower.r/badge.svg?branch=master)](https://coveralls.io/r/dirkschumacher/votingpower.r?branch=master)
 
 Measure voting power in R
+
