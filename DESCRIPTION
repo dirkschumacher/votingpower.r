@@ -1,0 +1,14 @@
+Package: votingpower
+Type: Package
+Title: Methods for the measurement of voting power
+Version: 0.0.1
+Date: 2015-06-20
+Author: Who wrote it
+Maintainer: Dirk Schumacher <mail@dirk-schumacher.net>
+Description: More about what it does (maybe more than one line)
+License: GPL-2
+Depends:
+    magrittr
+Suggests:
+    testthat
+ByteCompile: Yes
