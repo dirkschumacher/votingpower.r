@@ -6,7 +6,7 @@ Have you ever asked yourself if weigthed voting is fair? This package implements
 
 Imagine you are a representative of the country Luxembourg in the European Economic Community of 1958. Germany, France and Italy hat 4 votes each, Belgium and the Netherlands 2 and Luxembourg 1 vote. The necessary quota was 12 out of the 17 votes. The problem is, there exist no situation where the vote of Luxembourg counts; i.e. would change the outcome for a yes to no - this is called being critical. 
 
-This topic is a bit esoteric but quite interesting. Quite some algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved.
+This topic is a bit esoteric but quite interesting. Quite some algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved. The currently implemented methods have an exponential running time. However there exist some more advanced methods when dealing with larger voting bodies.
 
 Current version: 0.0.1
 
@@ -43,7 +43,7 @@ More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or i
 ## API
 * `create_weighted_voting_game` Create a weigthed voting game.
 * `create_simple_voting_game` Creates a simple voting game. A simple voting game is a weighted voting game with weights = 1 for all voters.
-* `compute_bz_score` For a voting game this function computes the Bz score; i.e. the number of times a voter is critical.
+* `compute_bz_score` For a voting game this function computes the Bz score; i.e. the number of times a voter is critical. 
 * `compute_bz_index` Bz index is the Bz score normalised by the sum of the Bz scores.
 * `compute_bz_power` The Bz power is the Bz score devided by 2^(n-1) where n is the number of voters. It corresponds to the probability a voter is critical.
 
