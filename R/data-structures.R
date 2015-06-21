@@ -17,10 +17,10 @@ create_weighted_voting_game <- function(quota, weights) {
   wvg
 }
 
-#' create_simple_voting_game
+#' create_equal_weight_voting_game
 #'
-#' A simple voting game is an assembly with a quota and a number of voters
-#' with uniform weight.
+#' A voting game with an assembly with a quota and a number of voters
+#' with equal weight of one.
 #' 
 #' @param quota the quota of the voting game.
 #' @param n the number of voters
@@ -28,8 +28,6 @@ create_weighted_voting_game <- function(quota, weights) {
 #' corresponding to the input values.
 #'
 #' @export
-create_simple_voting_game <- function(quota, n) {
-  game <- create_weighted_voting_game(quota, rep.int(1, n))
-  class(game) <- c(class(game), "svg")
-  game
+create_equal_weight_voting_game <- function(quota, n) {
+  create_weighted_voting_game(quota, rep.int(1, n))
 }

@@ -12,7 +12,7 @@
 #' @export
 compute_bz_score <- function(wvg) {
   if (!("wvg" %in% class(wvg))) {
-    stop("wvg must be a weighted or simple voting game") 
+    stop("wvg must be a weighted voting game") 
   }
   number_assembly <- length(wvg$weights)
   bz_scores <- 1:length(wvg$weights) %>% 

@@ -8,7 +8,7 @@ Imagine you are a representative of the country Luxembourg in the European Econo
 
 This topic is a bit esoteric but quite interesting. A number of algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved. The currently implemented methods have an exponential running time. However there exist some more advanced methods when dealing with larger voting bodies.
 
-Current version: 0.0.1
+Current version: 0.1.0
 
 # Installation
 
@@ -42,13 +42,13 @@ More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or i
 
 ## API
 * `create_weighted_voting_game` Create a weighted voting game.
-* `create_simple_voting_game` Creates a simple voting game. A simple voting game is a weighted voting game with weights = 1 for all voters.
+* `create_equal_weight_voting_game` Creates a weighted voting game with weights = 1 for all voters.
 * `compute_bz_score` For a voting game this function computes the Bz score; i.e. the number of times a voter is critical. 
 * `compute_bz_index` Bz index is the Bz score normalised by the sum of the Bz scores.
 * `compute_bz_power` The Bz power is the Bz score divided by 2^(n-1) where n is the number of voters. It corresponds to the probability a voter is critical.
 
 ## Versioning
-This package uses [Semantic Versioning 2.0](http://semver.org/). 
+This package will [Semantic Versioning 2.0](http://semver.org/) use once a first stable version is out. Indicated by a version number starting with 0. Until then breaking changes will increase the minor version number. The major version number will stay 0.
 
 ## References
 Werner Kirsch: Europa, nachgerechnet, Die Zeit, 9. Juni 2004
