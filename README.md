@@ -30,12 +30,12 @@ score <- compute_bz_score(eec)
 print(score) 
 # > [1] 10 10 10 6 6 0
 
-# The probability of a voter being critical is a good indicator for power
+# The probability of a voter being critical is a good indicator for power - the Bz power measure.
 power <- compute_bz_power(eec)
 print(power) 
 # > [1] 0.3125 0.3125 0.3125 0.1875 0.1875 0.0000
 
-# The below is the power according to the weights
+# Below is the power according to the weights
 print(round(eec$weights / sum(eec$weights), 2))
 # > [1] 0.24 0.24 0.24 0.12 0.12 0.06
 ```
