@@ -24,6 +24,7 @@ Let us recreate the example of the EEC from above.
 ```R
 library(votingpower)
 eec <- create_weighted_voting_game(12, c(4, 4, 4, 2, 2, 1))
+
 # the Banzhaf score counts the coalitions where a voter is critical.
 score <- compute_bz_score(eec)
 print(score) 
