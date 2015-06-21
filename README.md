@@ -38,7 +38,9 @@ print(power)
 print(round(eec$weights / sum(eec$weights), 2))
 # > [1] 0.24 0.24 0.24 0.12 0.12 0.06
 ```
-More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998).
+More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998). Below is a plot of the voting power of the EEC members in relation to the quota.
+
+![Voting power in the EEC](https://raw.githubusercontent.com/dirkschumacher/dirkschumacher.github.io/master/images/votingpower_eec.png)
 
 ## API
 * `create_weighted_voting_game` Create a weighted voting game.
