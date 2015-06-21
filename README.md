@@ -24,21 +24,24 @@ Let us recreate the example of the EEC from above.
 ```R
 library(votingpower)
 eec <- create_weighted_voting_game(12, c(4, 4, 4, 2, 2, 1))
+
 # the Banzhaf score counts the coalitions where a voter is critical.
 score <- compute_bz_score(eec)
 print(score) 
 # > [1] 10 10 10 6 6 0
 
-# The probability of a voter being critical is a good indicator for power
+# The probability of a voter being critical is a good indicator for power - the Bz power measure.
 power <- compute_bz_power(eec)
 print(power) 
 # > [1] 0.3125 0.3125 0.3125 0.1875 0.1875 0.0000
 
-# The below is the power according to the weights
+# Below is the power according to the weights
 print(round(eec$weights / sum(eec$weights), 2))
 # > [1] 0.24 0.24 0.24 0.12 0.12 0.06
 ```
-More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998).
+More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998). Below is a plot of the voting power of the EEC members in relation to the quota.
+
+![Voting power in the EEC](https://raw.githubusercontent.com/dirkschumacher/dirkschumacher.github.io/master/images/votingpower_eec.png)
 
 ## API
 * `create_weighted_voting_game` Create a weighted voting game.
