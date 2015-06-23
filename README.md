@@ -8,6 +8,8 @@ Imagine you are a representative of the country Luxembourg in the European Econo
 
 This topic is a bit esoteric but quite interesting. A number of algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved. The currently implemented methods have an exponential running time. However there exist some more advanced methods when dealing with larger voting bodies.
 
+More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998). Below is a plot of the voting power of the EEC members in relation to the quota.
+
 Current version: 0.1.0
 
 # Installation
@@ -39,8 +41,6 @@ print(power)
 print(round(eec$weights / sum(eec$weights), 2))
 # > [1] 0.24 0.24 0.24 0.12 0.12 0.06
 ```
-More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998). Below is a plot of the voting power of the EEC members in relation to the quota.
-
 ![Voting power in the EEC](https://raw.githubusercontent.com/dirkschumacher/dirkschumacher.github.io/master/images/votingpower_eec.png)
 
 ## API
