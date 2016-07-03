@@ -1,11 +1,11 @@
 Package: votingpower
 Type: Package
 Title: Methods for the measurement of voting power
-Version: 0.0.2
+Version: 0.1.0
 Date: 2015-06-20
-Author: Who wrote it
+Author: Dirk Schumacher
 Maintainer: Dirk Schumacher <mail@dirk-schumacher.net>
-Description: More about what it does (maybe more than one line)
+Description: Measure voting power in weighted voting systems
 License: GPL-2
 Depends:
     magrittr
