@@ -4,9 +4,9 @@
 
 Have you ever asked yourself if weighted voting is fair? This package implements (or will implement) some of the most popular voting power measurement methods. 
 
-Imagine you are a representative of the country Luxembourg in the European Economic Community of 1958. At that time Germany, France and Italy had 4 votes each, Belgium and the Netherlands 2 and Luxembourg 1 vote. The necessary quota was 12 out of the 17 votes. The problem was however: there exist no situation where the vote of Luxembourg counts; i.e. would change the outcome of a "yes" to "no" - this is called being critical.
+Imagine you are a representative of the country Luxembourg in the European Economic Community of 1958. At that time Germany, France and Italy had 4 votes each, Belgium and the Netherlands 2 and Luxembourg 1 vote. The necessary quota was 12 out of the 17 votes. The problem was however that there existed no situation where the vote of Luxembourg counted, i.e. would change the outcome of a "yes" to "no". Luxembourg was never critical.
 
-This topic is a bit esoteric but quite interesting. A number of algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved. The currently implemented methods have an exponential running time. However there exist some more advanced methods when dealing with larger voting bodies.
+This topic is a bit esoteric but quite interesting. A number of algorithms exists both for measuring power and for the inverse problem: designing weights such that a specific voting power is achieved. The currently implemented methods have an exponential running time. However there exist more advanced methods when dealing with larger voting bodies.
 
 More can be found [here](https://en.wikipedia.org/wiki/Banzhaf_power_index) or in the book of Felsenthal & Machover (1998). Below is a plot of the voting power of the EEC members in relation to the quota.
 
